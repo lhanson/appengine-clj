@@ -37,7 +37,8 @@
   [ & [directory]]
   (let [directory (or directory (System/getProperty "java.io.tmpdir"))]
     (proxy [LocalServerEnvironment] []
-      (getAppDir [] (java.io.File. directory)))))
+      (getAppDir [] (java.io.File. directory))
+      (enforceApiDeadlines [] true))))
 
 (defn login-aware-proxy
   "Returns a local api proxy environment."
