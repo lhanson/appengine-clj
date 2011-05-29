@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-APP_ENGINE_VERSION="1.4.0"
+APP_ENGINE_VERSION="1.5.0"
 APP_ENGINE_SDK_URL="http://googleappengine.googlecode.com/files/appengine-java-sdk-${APP_ENGINE_VERSION}.zip"
 
 APP_ENGINE_SDK_FILE="/tmp/`basename $APP_ENGINE_SDK_URL`"

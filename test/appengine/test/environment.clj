@@ -13,7 +13,9 @@
 (deftest test-local-server-environment
   (let [environment (local-server-environment)]
     (is (isa? (class environment) LocalServerEnvironment))
-    (is (= (.getAppDir environment) (java.io.File. (System/getProperty "java.io.tmpdir")))))
+    (is (= (.getAppDir environment) (java.io.File. (System/getProperty "java.io.tmpdir"))))
+    (with-appengine (local-proxy)
+      (is (= (.enforceApiDeadlines environment) true))))
   (let [environment (local-server-environment ".")]
     (is (isa? (class environment) LocalServerEnvironment))
     (is (= (.getAppDir environment) (java.io.File. ".")))))
