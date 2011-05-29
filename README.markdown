@@ -21,7 +21,7 @@ The easiest way to use this library in your own projects is via
 [Leiningen](http://github.com/technomancy/leiningen). Add the
 following dependency to your project.clj file:
 
-    [appengine "0.4.3-SNAPSHOT"]
+    [org.clojars.lhanson/appengine "0.4.4-SNAPSHOT"]
 
 At the moment not all App Engine JARs are available through the public
 Maven repositories (or I couldn't find them). Running the following

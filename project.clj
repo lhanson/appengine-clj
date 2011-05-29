@@ -1,4 +1,4 @@
-(defproject appengine "0.4.3-SNAPSHOT"
+(defproject org.clojars.lhanson/appengine "0.4.4-SNAPSHOT"
   :author "John D. Hume, Roman Scherer, Jean-Denis Greze, 深町英太郎 (E. Fukamachi)"
   :description "A Clojure library for Google App Engine."
   :url "http://github.com/r0man/appengine-clj"
@@ -12,7 +12,8 @@
                  [org.clojure/clojure-contrib "1.2.0"]
                  [ring/ring-servlet "0.2.3"]]
   :dev-dependencies [[autodoc "0.7.1-SNAPSHOT"]
-                     [lein-clojars "0.5.0"]
+                     [lein-clojars "0.6.0"]
+                     [org.clojars.technomancy/lein-search "1.0.0-SNAPSHOT"]
                      [com.google.appengine/appengine-api-labs "1.5.0"]
                      [com.google.appengine/appengine-api-stubs "1.5.0"]
                      [com.google.appengine/appengine-local-runtime "1.5.0"]
